@@ -1,0 +1,73 @@
+<div class="detail-container">
+  <div class="profile-head">
+    <img [src]="contact_detail?.image">
+    <div class="profile-detail">
+      <div class="name">{{contact_detail?.first_name}} {{contact_detail?.last_name}}</div>
+      <div class="position">{{contact_detail?.position}}</div>
+
+      <div class="actions">
+        <button class="btn message-btn ml-0"><i class="far fa-comments"></i> Message</button>
+        <button class="action-btn"><i class="fas fa-phone-alt"></i></button>
+        <button class="action-btn"><i class="fas fa-upload"></i></button>
+        <button class="action-btn"><i class="fas fa-ellipsis-h"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li>
+      <div class="title">Bio</div>
+      <div class="description">{{contact_detail?.bio}}</div>
+    </li>
+    <li>
+      <div class="title">Email</div>
+      <div class="description">
+        <div class="primary">
+          <span>{{contact_detail?.email_primary}}</span>
+          <button class="btn">Primary</button>
+        </div>
+        <div class="secondary">{{contact_detail?.email_secondary}}</div>
+      </div>
+    </li>
+    <li>
+      <div class="title">Dial</div>
+      <div class="description">{{contact_detail?.dial}}</div>
+    </li>
+    <li>
+      <div class="title">Meeting</div>
+      <div class="description">{{contact_detail?.meeting}}</div>
+    </li>
+    <li>
+      <div class="title">Phone</div>
+      <div class="description">
+        <div class="primary">
+          <span>{{contact_detail?.phone_primary}}</span>
+          <button class="btn">Primary</button>
+        </div>
+        <div class="secondary">{{contact_detail?.phone_secondary}}</div>
+      </div>
+    </li>
+    <li>
+      <div class="title">Social</div>
+      <div class="description">
+        <div class="actions">
+          <button class="action-btn">
+            <a href="https://www.facebook.com/" target="_black"><i class="fab fa-facebook-f"></i></a>
+          </button>
+          <button class="action-btn">
+            <a href="https://www.pinterest.com/" target="_black"><i class="fab fa-pinterest-p"></i></a>
+          </button>
+          <button class="action-btn">
+            <a href="https://twitter.com/" target="_black"><i class="fab fa-twitter"></i></a>
+          </button>
+          <button class="action-btn">
+            <a href="https://www.linkedin.com/" target="_black"><i class="fab fa-linkedin-in"></i></a>
+          </button>
+          <button class="action-btn">
+            <a href="https://www.google.com/" target="_black"><i class="fab fa-google"></i></a>
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

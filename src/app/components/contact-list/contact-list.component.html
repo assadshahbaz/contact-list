@@ -1,0 +1,37 @@
+<div class="list-container">
+  <div class="list-header">
+    <button class="action-btn"><i class="fas fa-bars"></i></button>
+
+    <h5>Contacts</h5>
+    <div class="btn-nav float-right">
+      <button class="action-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="action-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="list">
+    <div class="search">
+      <label>Search for a contact</label>
+      <input type="text" placeholder="Name, email or phone number">
+      <button class="btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div routerLink="/contact-detail/{{contact.id}}" class="contact-card" *ngFor="let contact of contacts">
+      <div class="profile">
+        <img [src]="contact.image">
+        <div class="status"></div>
+      </div>
+      <div class="person-detail">
+        <div class="name">{{contact.first_name}} {{contact.last_name}}</div>
+        <div class="position">{{contact.position}}</div>
+      </div>
+      <div class="actions">
+        <button class="action-btn"><i class="far fa-comments"></i></button>
+        <button class="action-btn btn-mid"><i class="fas fa-phone-alt"></i></button>
+        <button class="action-btn"><i class="fas fa-ellipsis-h"></i></button>
+      </div>
+    </div>
+  </div>
+</div>

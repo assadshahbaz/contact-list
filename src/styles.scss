@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+.action-btn:hover {
+  color: #6B59CC;
+}
+
+.action-btn {
+  background: #FFFFFF;
+  border: 1px solid #ECEEF5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #8083A3;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  svg {
+    font-size: 12px;
+    vertical-align: baseline;
+  }
+}

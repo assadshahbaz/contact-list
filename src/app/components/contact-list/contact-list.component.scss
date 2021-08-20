@@ -1,0 +1,114 @@
+.list-container {
+  .list-header {
+    h5 {
+      margin-left: 20px;
+      display: inline-block;
+    }
+
+    .btn-nav {
+      button {
+        margin: 0 2px;
+      }
+    }
+  }
+
+  .list {
+    height: 90vh;
+    overflow: auto;
+  }
+
+  .list-header,
+  .list {
+    padding: 10px;
+    overflow: auto;
+  }
+
+  hr {
+    border: 1px solid #ECEEF5;
+    // margin: 0;
+  }
+
+  .list {
+    .search {
+      margin-bottom: 30px;
+
+      label {
+        display: block;
+        color: #8083A3;
+      }
+
+      input::placeholder {
+        color: #1A1C1D;
+        font-weight: bold;
+      }
+
+      input {
+        width: 90%;
+        background-color: aliceblue;
+        border: 1px solid transparent;
+      }
+
+      button {
+        margin-left: 5px;
+        width: 30px;
+        padding: 0;
+        height: 30px;
+        vertical-align: baseline;
+        background-color: transparent;
+      }
+    }
+
+    .contact-card {
+      cursor: pointer;
+      margin: 20px 0;
+      padding: 5px;
+      position: relative;
+
+      .profile {
+        position: absolute;
+
+        img {
+          width: 36px;
+          height: 36px;
+          border-radius: 10px;
+        }
+
+        .status {
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          right: -3px;
+          bottom: -3px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          background-color: #F6933E;
+        }
+      }
+
+      .person-detail {
+        margin-left: 50px;
+        display: inline-block;
+
+        .name {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        .position {
+          font-size: 14px;
+          line-height: 21px;
+          color: #8083A3;
+        }
+      }
+
+      .actions {
+        float: right;
+
+        .btn-mid {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
