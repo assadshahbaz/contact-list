@@ -13,14 +13,13 @@
   }
 
   .list {
-    height: 90vh;
+    height: 85vh;
     overflow: auto;
   }
 
   .list-header,
   .list {
     padding: 10px;
-    overflow: auto;
   }
 
   hr {
@@ -44,7 +43,7 @@
 
       input {
         width: 90%;
-        background-color: aliceblue;
+        background-color: transparent;
         border: 1px solid transparent;
       }
 
